@@ -7,9 +7,9 @@ This repository contains the **CS5567 Mini Project 5**, which focuses on ECG sig
 
 ### **MATLAB Scripts**
 - **ReadPhysionetData.m**  
-  - Downloads and processes ECG signal data from PhysioNet 2017 Challenge  
+  - Downloads and processes ECG signal data from the PhysioNet 2017 Challenge  
   - Extracts signals and corresponding labels and saves them into `PhysionetData.mat`  
-  - [PhysioNet 2017 Challenge Data](https://physionet.org/challenge/2017/)
+  - [Download PhysioNet 2017 Challenge Data](https://physionet.org/content/challenge-2017/1.0.0/)  
 
 - **segmentSignals.m**  
   - Segments ECG signals into fixed-length samples (9000 samples per segment)  
@@ -20,9 +20,10 @@ This repository contains the **CS5567 Mini Project 5**, which focuses on ECG sig
   - Loads and preprocesses the data  
   - Trains and evaluates the neural network model  
 
-### **Data Files**
-- **PhysionetData.mat**  
-  - Contains the preprocessed ECG signal data and corresponding labels for training  
+### **Required Data**
+- **PhysionetData.mat** (Not included due to size limitations)  
+  - You must **download the dataset manually** from [PhysioNet 2017 Challenge](https://physionet.org/content/challenge-2017/1.0.0/)  
+  - Place the dataset in the project directory before running any scripts  
 
 ### **Presentation**
 - **CS5567_miniProject5_results.pptm**  
@@ -37,8 +38,10 @@ Ensure **MATLAB** with **Deep Learning Toolbox** is installed before running the
 - Statistics and Machine Learning Toolbox  
 
 ## Usage  
-1. **Download the ECG dataset** (if not already processed)  
-   - Run `ReadPhysionetData.m` to fetch and preprocess the data  
+1. **Download the ECG dataset**  
+   - Visit [PhysioNet 2017 Challenge](https://physionet.org/content/challenge-2017/1.0.0/)  
+   - Download and extract the dataset  
+   - Run `ReadPhysionetData.m` to preprocess the data  
    - This will generate `PhysionetData.mat`  
 
 2. **Segment ECG signals**  
@@ -66,3 +69,4 @@ This project is open for academic and research use.
 
 ---
 **Author:** Alexander Dowell  
+
